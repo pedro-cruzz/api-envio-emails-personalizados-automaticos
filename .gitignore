@@ -1,0 +1,23 @@
+# Ambiente Virtual
+venv/
+ENV/
+env/
+.venv/
+
+# Variáveis de Ambiente (Segurança!)
+.env
+.flaskenv
+
+# Python (Arquivos compilados e cache)
+__pycache__/
+*.py[cod]
+*$py.class
+.pytest_cache/
+
+# VS Code / IDEs
+.vscode/
+.idea/
+
+# Sistema Operacional
+.DS_Store
+Thumbs.db
