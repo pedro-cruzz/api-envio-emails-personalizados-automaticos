@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+<body style="margin: 0; padding: 0; background-color: #f0f4f8; font-family: 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;">
+    <table border="0" cellpadding="0" cellspacing="0" width="100%" style="padding: 40px 10px;">
+        <tr>
+            <td align="center">
+                <table border="0" cellpadding="0" cellspacing="0" width="100%" style="max-width: 600px; background-color: #ffffff; border-radius: 16px; overflow: hidden; box-shadow: 0 10px 25px rgba(0,0,0,0.05); border: 1px solid #e1e8f0;">
+                    
+                    <tr>
+                        <td align="center" style="background: linear-gradient(135deg, #102a43 0%, #243b53 100%); padding: 45px 30px;">
+                            <img src="https://www.ijadrones.com.br/static/img/logo_oceano_azul_light.png" 
+                                 alt="Oceano Azul" 
+                                 width="200" 
+                                 style="display: block; border: 0; max-height: 60px; width: auto; margin-bottom: 15px;">
+                            <p style="margin: 5px 0 0 0; color: #bfdbfe; font-size: 13px; letter-spacing: 1px; font-weight: bold;">NOTIFICAÇÃO DE NOVO LEAD</p>
+                        </td>
+                    </tr>
+
+                    <tr>
+                        <td style="padding: 40px 35px;">
+                            <h2 style="margin: 0 0 20px 0; color: #1e293b; font-size: 22px; font-weight: 700;">Olá, Equipe Oceano Azul!</h2>
+                            <p style="margin: 0 0 30px 0; color: #64748b; font-size: 16px; line-height: 1.6;">
+                                Um novo potencial cliente acaba de demonstrar interesse através do formulário. Veja os detalhes capturados:
+                            </p>
+
+                            <table border="0" cellpadding="0" cellspacing="0" width="100%" style="background-color: #f8fafc; border-radius: 12px; padding: 25px; border: 1px solid #f1f5f9;">
+                                <tr>
+                                    <td style="padding-bottom: 15px;">
+                                        <span style="color: #94a3b8; font-size: 12px; font-weight: bold; text-transform: uppercase;">Nome do Lead</span><br>
+                                        <span style="color: #1e293b; font-size: 16px; font-weight: 600;">{{ nome_form }}</span>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td style="padding-bottom: 15px;">
+                                        <span style="color: #94a3b8; font-size: 12px; font-weight: bold; text-transform: uppercase;">E-mail de Contato</span><br>
+                                        <span style="color: #2563eb; font-size: 16px; font-weight: 600;">{{ email_form }}</span>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td style="padding-bottom: 15px;">
+                                        <span style="color: #94a3b8; font-size: 12px; font-weight: bold; text-transform: uppercase;">WhatsApp / Telefone</span><br>
+                                        <span style="color: #1e293b; font-size: 16px; font-weight: 600;">{{ tel_form }}</span>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <span style="color: #94a3b8; font-size: 12px; font-weight: bold; text-transform: uppercase;">Mensagem Recebida</span><br>
+                                        <div style="margin-top: 8px; color: #475569; font-size: 15px; line-height: 1.6; padding: 15px; background-color: #ffffff; border-radius: 8px; border: 1px solid #e2e8f0;">
+                                            {{ mensagem_form }}
+                                        </div>
+                                    </td>
+                                </tr>
+                            </table>
+
+                            <table border="0" cellpadding="0" cellspacing="0" width="100%" style="margin-top: 35px;">
+                                <tr>
+                                    <td align="center">
+                                        <a href="mailto:{{ email_form }}" style="background-color: #2563eb; color: #ffffff; padding: 16px 32px; text-decoration: none; border-radius: 10px; font-weight: bold; font-size: 16px; display: inline-block; box-shadow: 0 4px 6px rgba(37, 99, 235, 0.2);">
+                                            Responder via E-mail
+                                        </a>
+                                    </td>
+                                </tr>
+                            </table>
+                        </td>
+                    </tr>
+
+                    <tr>
+                        <td style="padding: 0 35px 40px 35px; text-align: center;">
+                            <p style="margin: 0; color: #94a3b8; font-size: 12px;">
+                                Este é um serviço automático da <strong>Oceano Azul</strong>.<br>
+                                © 2026 Oceano Azul | IJA Drones
+                            </p>
+                        </td>
+                    </tr>
+                </table>
+            </td>
+        </tr>
+    </table>
+</body>
+</html>
