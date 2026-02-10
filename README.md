@@ -25,5 +25,64 @@ git clone [https://github.com/seu-usuario/api-email-resend.git](https://github.c
 cd api-email-resend
 ```
 
+### 2. Instalar dependências
+```bash
+pip install -r requirements.txt
+```
 
+### 3. Configurar variáveis de ambiente
+Crie um arquivo `.env` na raiz do projeto:
+```
+RESEND_API_KEY=sua_chave_api
+FLASK_ENV=development
+```
+
+### 4. Iniciar o servidor
+```bash
+python app.py
+```
+
+O servidor estará disponível em `http://localhost:5000`
+
+## 📨 Endpoint Principal
+
+**POST** `/send-email`
+
+### Body (JSON)
+```json
+{
+    "to": "destinatario@example.com",
+    "subject": "Assunto",
+    "template": "lead_notification",
+    "variables": {
+        "nome": "João",
+        "mensagem": "Seu conteúdo aqui"
+    }
+}
+```
+
+### Resposta de Sucesso
+```json
+{
+    "success": true,
+    "message": "E-mail enviado com sucesso",
+    "email_id": "uuid-123"
+}
+```
+
+## 📁 Estrutura do Projeto
+
+```
+api-email/
+├── app.py
+├── templates/
+│   └── emails/
+├── .env
+├── requirements.txt
+└── README.md
+```
+
+## 📝 Licença
+
+Este projeto é licenciado sob a MIT License.
 
